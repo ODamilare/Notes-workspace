@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #14213d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cn-toast {
+  background: #ffffff !important;
+  color: #14213d !important;
+  border: 1px solid #e1e4ea !important;
+  box-shadow:
+    0 10px 30px rgba(20, 33, 61, 0.08),
+    0 2px 8px rgba(20, 33, 61, 0.05) !important;
+}
+
+.cn-toast [data-title] {
+  color: #14213d !important;
+  font-weight: 600;
+}
+
+.cn-toast [data-description] {
+  color: #667085 !important;
+}
+
+.cn-toast [data-icon] {
+  color: #4963e7 !important;
+}
+
+.cn-toast [data-close-button] {
+  color: #7a8497 !important;
+}
+
+.cn-toast [data-close-button]:hover {
+  background: #f4f5f8 !important;
+  color: #14213d !important;
+}
