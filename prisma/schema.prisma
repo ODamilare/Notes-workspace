@@ -4,10 +4,9 @@ generator client {
 }
 
 datasource db {
-  // Local development uses the PostgreSQL container in docker-compose.yml.
-  // Hosted previews will use the managed PostgreSQL URL supplied through DATABASE_URL.
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 /// An application account. passwordHash is created by the API and must never be
